@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="index.css">    
+ <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+ <style>
+   nav{
+    font-family: 'Open Sans', sans-serif;
+   }
+     button{
+         text-align: center;
+         color: rgb(58, 218, 204);
+         font-family: 'Pacifico', cursive;
+         border: 2px solid ;
+  border-radius: 8px;
+  width: 100px;
+  height: 50px;
+     }
+     input{
+        border: 2px solid ;
+  border-radius: 8px;
+         border: 0rem;
+         width: 250px;
+         height:250px;
+         margin-bottom: 20px;
+         text-align: center;
+        color: rgb(20, 35, 62);
+         background: rgb(58, 218, 204); 
+     }
+     .vv{
+       text-align: center;
+       color: rgb(58, 218, 204);
+     
+
+     }
+  
+   hr{
+    background: rgb(58, 218, 204);   
+    color: rgb(58, 218, 204); 
+   }
+ </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              
+            <li class="nav-item">
+              <a class="nav-link" href="signin.html">Signin</a>
+            </li>
+              
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Logout</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="signup.html">Signup</a>
+              </li>
+          </ul>
+         
+        </div>
+      </nav>
+ <p class="w"> Wishes</p>
+ <div class="container">
+     <div class="vv">
+<input id="inputText" name="input"  type="text"  /><br>
+<button onclick="myFunction()" >Wish to me </button>
+<p id="pText"></p>
+<script>
+    var myArr=[""];
+function myFunction() {
+var inputText=document.getElementById('inputText').value;
+    myArr.push(inputText);
+    var pval="";
+    for(i=0;i<myArr.length;i++)
+        {
+            pval=pval+myArr[i]+"<br/>"+"<hr>";
+            document.getElementById('pText').innerHTML=pval;
+        }
+}
+</script></div></div>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        
+      <li class="nav-item">
+        <a class="nav-link" href="#">All Copy Right 2019 | Vian Adeeb</a>
+      </li>
+    
+    </ul>
+   
+  </div>
+</nav>
+<script src="main.js"></script>    
+</body>
+</html>
